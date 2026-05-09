@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects · GeoScape Lab</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="topbar">Independent Research Group &nbsp;·&nbsp; GIS &nbsp;·&nbsp; Remote Sensing &nbsp;·&nbsp; GeoAI &nbsp;·&nbsp; Climate &amp; Water Dynamics</div>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">GeoScape</span><span class="logo-sub">Lab</span></a>
+      <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="people.html">People</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="news.html">News</a>
+        <a href="prospective.html">Join Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Projects</p>
+      <h1>Ongoing Projects</h1>
+      <p>Current research initiatives and collaborative projects underway at GeoScape Lab.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">Active</span>
+        <h2 class="section-title">Current Research Projects</h2>
+      </div>
+
+      <!-- ╔═══════════════════════════════════════════════════════════════════╗
+           ║                  HOW TO ADD A PROJECT                              ║
+           ╠═══════════════════════════════════════════════════════════════════╣
+           ║ STEP 1: Delete (or comment out) the "no projects" line below if   ║
+           ║         you're adding the first project.                          ║
+           ║ STEP 2: Copy the block between TEMPLATE_START and TEMPLATE_END.   ║
+           ║ STEP 3: Paste it inside <div class="projects-grid"> above.        ║
+           ║ STEP 4: Replace every {{...}} placeholder with your value.        ║
+           ║ STEP 5: Commit changes. Done!                                     ║
+           ╠═══════════════════════════════════════════════════════════════════╣
+           ║ PLACEHOLDER GUIDE:                                                 ║
+           ║   {{STATUS}}      = e.g. Ongoing / Active / Completed             ║
+           ║   {{TITLE}}       = full project title                            ║
+           ║   {{DESCRIPTION}} = 2 - 4 sentence summary                        ║
+           ║                                                                    ║
+           ║ OPTIONAL: If the project has a public page or report, replace     ║
+           ║   the closing </div> with:                                        ║
+           ║     <a href="YOUR_LINK" class="project-link" target="_blank">Learn More &rarr;</a>  ║
+           ║   </div>                                                           ║
+           ╚═══════════════════════════════════════════════════════════════════╝
+
+      TEMPLATE_START
+      <div class="project-card">
+        <span class="project-status active">{{STATUS}}</span>
+        <h3 class="project-title">{{TITLE}}</h3>
+        <p class="project-desc">{{DESCRIPTION}}</p>
+      </div>
+      TEMPLATE_END
+      -->
+
+      <div class="projects-grid">
+
+        <p class="no-vacancies" style="grid-column: 1 / -1;">There are no ongoing projects to display at this time. Please check back later.</p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><span class="logo-mark">GeoScape</span><span class="logo-sub" style="color: var(--muted);">Lab</span></div>
+        <p>An independent research group studying disaster risk, water &amp; land dynamics, environmental economics, and climate adaptation.</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a><a href="people.html">People</a><a href="research.html">Research</a>
+        <a href="projects.html">Projects</a><a href="prospective.html">Join Us</a><a href="news.html">News</a><a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2023 GeoScape Lab. All rights reserved.</span>
+      <span>geoscape-lab.github.io</span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

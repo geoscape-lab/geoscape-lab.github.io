@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News · GeoScape Lab</title>
+  <meta name="description" content="Latest news, updates, and announcements from GeoScape Lab." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="topbar">Independent Research Group &nbsp;·&nbsp; GIS &nbsp;·&nbsp; Remote Sensing &nbsp;·&nbsp; GeoAI &nbsp;·&nbsp; Climate &amp; Water Dynamics</div>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">GeoScape</span><span class="logo-sub">Lab</span></a>
+      <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="people.html">People</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="news.html" class="active">News</a>
+        <a href="prospective.html">Join Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; News</p>
+      <h1>News &amp; Updates</h1>
+      <p>Latest announcements, events, publications, and activities from GeoScape Lab.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-inner">
+
+      <div class="news-grid">
+
+        <!-- ╔═══════════════════════════════════════════════════════════════════╗
+             ║                  HOW TO ADD A NEWS ITEM                            ║
+             ╠═══════════════════════════════════════════════════════════════════╣
+             ║ STEP 1: Copy the entire block between TEMPLATE_START and          ║
+             ║         TEMPLATE_END below (do NOT include the comment markers).  ║
+             ║ STEP 2: Paste it just below the existing news cards.              ║
+             ║ STEP 3: Replace every {{...}} placeholder with your value.        ║
+             ║ STEP 4: For the linked detail page, make a copy of an existing    ║
+             ║         pages/news-lab-founded.html, rename to pages/news-{{SLUG}}.html ║
+             ║         and edit its content.                                     ║
+             ║ STEP 5: Commit changes. Done!                                     ║
+             ╠═══════════════════════════════════════════════════════════════════╣
+             ║ PLACEHOLDER GUIDE:                                                 ║
+             ║   {{SLUG}}      = short url-safe name (e.g. lab-funded-2026)      ║
+             ║   {{IMG_FILE}}  = optional image filename in /images, or leave as  ║
+             ║                   news-{{SLUG}}.jpg (placeholder ◈ shown if none)  ║
+             ║   {{DATE}}      = e.g. 25 April 2023                              ║
+             ║   {{TITLE}}     = headline (keep under ~80 characters)            ║
+             ║   {{EXCERPT}}   = 2 - 3 sentences summarising the news            ║
+             ╚═══════════════════════════════════════════════════════════════════╝
+
+        TEMPLATE_START
+        <a href="pages/news-{{SLUG}}.html" class="news-card">
+          <img
+            src="images/news-{{SLUG}}.jpg"
+            alt="{{TITLE}}"
+            class="news-card-img"
+            onerror="this.outerHTML='<div class=\'news-card-img-placeholder\'>◈</div>'"
+          >
+          <div class="news-card-body">
+            <p class="news-card-date">{{DATE}}</p>
+            <p class="news-card-title">{{TITLE}}</p>
+            <p class="news-card-excerpt">{{EXCERPT}}</p>
+          </div>
+          <div class="news-card-footer">Read More &rarr;</div>
+        </a>
+        TEMPLATE_END
+        -->
+
+        <!-- NEWS CARD - Lab Founded -->
+        <a href="pages/news-lab-founded.html" class="news-card">
+          <img
+            src="images/news-lab-founded.jpg"
+            alt="GeoScape Lab founding"
+            class="news-card-img"
+            onerror="this.outerHTML='<div class=\'news-card-img-placeholder\'>◈</div>'"
+          >
+          <div class="news-card-body">
+            <p class="news-card-date">25 April 2023</p>
+            <p class="news-card-title">GeoScape Lab Established</p>
+            <p class="news-card-excerpt">GeoScape Lab was officially established on 25 April 2023 as an independent, multi-institutional research collective. All founding members were present at the inaugural gathering, marking the start of the lab's collaborative work in geospatial science, climate research, and environmental analysis.</p>
+          </div>
+          <div class="news-card-footer">Read More &rarr;</div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><span class="logo-mark">GeoScape</span><span class="logo-sub" style="color: var(--muted);">Lab</span></div>
+        <p>An independent research group studying disaster risk, water &amp; land dynamics, environmental economics, and climate adaptation.</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a><a href="people.html">People</a><a href="research.html">Research</a>
+        <a href="projects.html">Projects</a><a href="news.html">News</a><a href="prospective.html">Join Us</a><a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2023 GeoScape Lab. All rights reserved.</span>
+      <span>geoscape-lab.github.io</span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>People · GeoScape Lab</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="topbar">Independent Research Group &nbsp;·&nbsp; GIS &nbsp;·&nbsp; Remote Sensing &nbsp;·&nbsp; GeoAI &nbsp;·&nbsp; Climate &amp; Water Dynamics</div>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">GeoScape</span><span class="logo-sub">Lab</span></a>
+      <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="people.html" class="active">People</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="news.html">News</a>
+        <a href="prospective.html">Join Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; People</p>
+      <h1>Our People</h1>
+      <p>GeoScape Lab is made up of researchers from diverse institutions, united by a shared passion for geospatial science.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">Leadership</span>
+        <h2 class="section-title">Co-Directors</h2>
+      </div>
+      <div class="people-grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
+        <div class="person-card leader" style="padding: 36px 32px;">
+          <div class="person-initials" style="width: 64px; height: 64px; font-size: 22px;">RS</div>
+          <p class="person-name" style="font-size: 22px;">Ragib Mahmood Shuvo</p>
+          <p class="person-role">Co-Director, GeoScape Lab · Lecturer, Independent University, Bangladesh</p>
+          <p style="font-size: 14px; color: var(--light); font-weight: 300; line-height: 1.7; margin-bottom: 20px;">His research integrates climate science, geospatial analytics, remote sensing, and machine learning to address environmental and socio-ecological challenges in climate-vulnerable regions.</p>
+          <a href="pages/shuvo.html" class="person-link">View Full Profile &rarr;</a>
+        </div>
+        <div class="person-card leader" style="padding: 36px 32px;">
+          <div class="person-initials" style="width: 64px; height: 64px; font-size: 22px;">SK</div>
+          <p class="person-name" style="font-size: 22px;">Sumaia Kashem</p>
+          <p class="person-role">Co-Director, GeoScape Lab · PhD Candidate, Monash University</p>
+          <p style="font-size: 14px; color: var(--light); font-weight: 300; line-height: 1.7; margin-bottom: 20px;">Her research sits at the intersection of climate governance, integrated water resource management, environmental economics, and GIS. Currently pursuing her PhD at Monash University, Australia.</p>
+          <a href="pages/dola.html" class="person-link">View Full Profile &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: var(--off-white); padding-top: 0;">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">Members</span>
+        <h2 class="section-title">Researchers</h2>
+      </div>
+      <div class="people-grid">
+
+        <!-- ╔═══════════════════════════════════════════════════════════════════╗
+             ║              HOW TO ADD A NEW MEMBER CARD                          ║
+             ╠═══════════════════════════════════════════════════════════════════╣
+             ║ STEP 1: First create the member's profile page using                ║
+             ║         /pages/_TEMPLATE_member.html (read its instructions).       ║
+             ║ STEP 2: Copy the block between TEMPLATE_START and TEMPLATE_END.    ║
+             ║ STEP 3: Paste it inside this <div class="people-grid">.            ║
+             ║ STEP 4: Replace every {{...}} placeholder.                         ║
+             ║ STEP 5: Commit. Done!                                              ║
+             ╠═══════════════════════════════════════════════════════════════════╣
+             ║ PLACEHOLDER GUIDE:                                                  ║
+             ║   {{INITIALS}}    = e.g. AB                                         ║
+             ║   {{FIRST_LAST}}  = e.g. Aisha Begum                                ║
+             ║   {{ROLE}}        = e.g. Researcher                                 ║
+             ║   {{ONE_LINER}}   = single sentence about their work                ║
+             ║   {{LASTNAME}}    = lowercase, must match profile filename          ║
+             ╚═══════════════════════════════════════════════════════════════════╝
+
+        TEMPLATE_START
+        <div class="person-card">
+          <div class="person-initials">{{INITIALS}}</div>
+          <p class="person-name">{{FIRST_LAST}}</p>
+          <p class="person-role">{{ROLE}}</p>
+          <p style="font-size: 13px; font-weight: 300; color: var(--mid); line-height: 1.7; margin-bottom: 16px;">{{ONE_LINER}}</p>
+          <a href="pages/{{LASTNAME}}.html" class="person-link">Profile &rarr;</a>
+        </div>
+        TEMPLATE_END
+        -->
+
+        <div class="person-card">
+          <div class="person-initials">PG</div>
+          <p class="person-name">Prem Kumer Ghosh</p>
+          <p class="person-role">Researcher</p>
+          <p style="font-size: 13px; font-weight: 300; color: var(--mid); line-height: 1.7; margin-bottom: 16px;">Specialises in GIS-based hazard analysis and spatial modelling.</p>
+          <a href="pages/ghosh.html" class="person-link">Profile &rarr;</a>
+        </div>
+        <div class="person-card">
+          <div class="person-initials">ZH</div>
+          <p class="person-name">Md. Zahid Hasan</p>
+          <p class="person-role">Researcher</p>
+          <p style="font-size: 13px; font-weight: 300; color: var(--mid); line-height: 1.7; margin-bottom: 16px;">Focuses on land use change detection and machine learning in remote sensing.</p>
+          <a href="pages/hasan.html" class="person-link">Profile &rarr;</a>
+        </div>
+        <div class="person-card">
+          <div class="person-initials">RC</div>
+          <p class="person-name">Radwan Rahman Chowdhury</p>
+          <p class="person-role">Researcher</p>
+          <p style="font-size: 13px; font-weight: 300; color: var(--mid); line-height: 1.7; margin-bottom: 16px;">Works on land use and land cover mapping, remote sensing, and climate vulnerability analysis.</p>
+          <a href="pages/chowdhury.html" class="person-link">Profile &rarr;</a>
+        </div>
+        <div class="person-card">
+          <div class="person-initials">MB</div>
+          <p class="person-name">Manoshi Bhuiyan</p>
+          <p class="person-role">Researcher</p>
+          <p style="font-size: 13px; font-weight: 300; color: var(--mid); line-height: 1.7; margin-bottom: 16px;">Works on nature-based solutions, bioremediation, and coastal climate adaptation.</p>
+          <a href="pages/bhuiyan.html" class="person-link">Profile &rarr;</a>
+        </div>
+        <div class="person-card">
+          <div class="person-initials">FR</div>
+          <p class="person-name">Farhana Rabbi Ruponti</p>
+          <p class="person-role">Researcher</p>
+          <p style="font-size: 13px; font-weight: 300; color: var(--mid); line-height: 1.7; margin-bottom: 16px;">Focuses on flood risk assessment and hydrological modelling.</p>
+          <a href="pages/ruponti.html" class="person-link">Profile &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><span class="logo-mark">GeoScape</span><span class="logo-sub" style="color: var(--muted);">Lab</span></div>
+        <p>An independent research group studying disaster risk, water &amp; land dynamics, environmental economics, and climate adaptation.</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a><a href="people.html">People</a><a href="research.html">Research</a>
+        <a href="projects.html">Projects</a><a href="prospective.html">Join Us</a><a href="news.html">News</a><a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2023 GeoScape Lab. All rights reserved.</span>
+      <span>geoscape-lab.github.io</span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

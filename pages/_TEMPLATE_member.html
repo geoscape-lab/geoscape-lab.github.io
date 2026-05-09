@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+╔══════════════════════════════════════════════════════════════════════════╗
+║                  HOW TO ADD A NEW LAB MEMBER                             ║
+╠══════════════════════════════════════════════════════════════════════════╣
+║ STEP 1: Make a COPY of this file (NOT a rename — keep this template).    ║
+║         On github.com: open this file, click the pencil to edit, copy    ║
+║         all the contents, then go up one level (to /pages), click        ║
+║         "Add file → Create new file", name it like                       ║
+║         "newmember-lastname.html" (all lowercase, no spaces).             ║
+║         Paste, then edit.                                                 ║
+║                                                                            ║
+║ STEP 2: Replace every {{...}} placeholder below with the member's value. ║
+║         Search-replace is your friend.                                    ║
+║                                                                            ║
+║ STEP 3: Upload their profile picture to /images, named exactly            ║
+║         "{{LASTNAME}}.jpg" (lowercase). E.g. shuvo.jpg, ghosh.jpg.        ║
+║                                                                            ║
+║ STEP 4: Open /people.html and add a person card linking to the new       ║
+║         page. Look for the "researchers" grid section — copy any         ║
+║         existing card and update name, initials, role, and link.          ║
+║                                                                            ║
+║ STEP 5: Commit. Done!                                                     ║
+╠══════════════════════════════════════════════════════════════════════════╣
+║ PLACEHOLDER GUIDE:                                                        ║
+║   {{FIRST_LAST}}        = e.g. Manoshi Bhuiyan                           ║
+║   {{LASTNAME}}          = e.g. bhuiyan (lowercase, used for filename)    ║
+║   {{INITIALS}}          = e.g. MB (for fallback if photo missing)         ║
+║   {{ROLE_LONG}}         = e.g. Researcher, GeoScape Lab                   ║
+║   {{AFFILIATION}}       = e.g. MSc Candidate, IUB                        ║
+║   {{AFFILIATION_SHORT}} = sidebar version, e.g. MSc Candidate, IUB       ║
+║   {{EMAIL}}             = full email address                             ║
+║                                                                            ║
+║ For the OPTIONAL link buttons (ResearchGate / Scholar / LinkedIn /       ║
+║ ORCID): keep the ones the member has, DELETE the rest. To delete, just  ║
+║ remove the entire <a> ... </a> line.                                     ║
+║                                                                            ║
+║ For the EDUCATION list: each <div class="edu-item"> block is one degree. ║
+║ Keep / duplicate / delete blocks as needed.                              ║
+║                                                                            ║
+║ For PUBLICATIONS: each <div class="pub-item"> block is one paper.        ║
+║ Keep / duplicate / delete as needed. Group titles (Peer-Reviewed         ║
+║ Journal Articles / Conference Proceedings / Book Chapters / Ongoing      ║
+║ Research) can be removed if the member has none in that category.        ║
+║                                                                            ║
+║ DELETE this entire instructions comment block before publishing.         ║
+╚══════════════════════════════════════════════════════════════════════════╝
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{FIRST_LAST}} · GeoScape Lab</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <div class="topbar">Independent Research Group &nbsp;·&nbsp; GIS &nbsp;·&nbsp; Remote Sensing &nbsp;·&nbsp; GeoAI &nbsp;·&nbsp; Climate &amp; Water Dynamics</div>
+
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><span class="logo-mark">GeoScape</span><span class="logo-sub">Lab</span></a>
+      <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+      <nav id="mainNav">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../people.html" class="active">People</a>
+        <a href="../research.html">Research</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../news.html">News</a>
+        <a href="../prospective.html">Join Us</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="../index.html">Home</a> &nbsp;/&nbsp; <a href="../people.html">People</a> &nbsp;/&nbsp; {{FIRST_LAST}}</p>
+      <h1>{{FIRST_LAST}}</h1>
+      <p style="margin-bottom:4px;">{{ROLE_LONG}}</p>
+      <p style="font-size:15px; color:var(--muted); font-weight:300;">{{AFFILIATION}}</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-inner">
+      <div class="member-layout">
+
+        <div class="member-sidebar">
+          <div class="member-avatar">
+            <img src="../images/{{LASTNAME}}.jpg" alt="{{FIRST_LAST}}"
+              onerror="this.onerror=null;this.style.display='none';this.parentElement.innerHTML='<span>{{INITIALS}}</span>';"
+              style="display:block;">
+          </div>
+          <p class="member-name">{{FIRST_LAST}}</p>
+          <p class="member-title" style="text-transform:none;letter-spacing:0;">{{ROLE_LONG}}</p>
+          <p style="font-size:12px;color:var(--muted);margin-bottom:24px;font-weight:300;margin-top:-10px;">{{AFFILIATION_SHORT}}</p>
+          <div class="member-links">
+            <!-- KEEP only the ones the member has, DELETE the others. -->
+            <a href="mailto:{{EMAIL}}" class="member-link-btn">Email</a>
+            <a href="{{RESEARCHGATE_URL}}" class="member-link-btn" target="_blank" rel="noopener">ResearchGate</a>
+            <a href="{{GOOGLE_SCHOLAR_URL}}" class="member-link-btn" target="_blank" rel="noopener">Google Scholar</a>
+            <a href="{{LINKEDIN_URL}}" class="member-link-btn" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="{{ORCID_URL}}" class="member-link-btn" target="_blank" rel="noopener">ORCID</a>
+          </div>
+        </div>
+
+        <div class="member-content">
+
+          <h2>Biography</h2>
+          <p>{{BIO_PARAGRAPH_1}}</p>
+          <p>{{BIO_PARAGRAPH_2}}</p>
+          <!-- Add more <p>...</p> paragraphs if needed. -->
+
+          <h2>Research Interests</h2>
+          <div class="interest-tags">
+            <!-- Each <span class="tag">...</span> is one interest. Keep / duplicate / delete as needed. -->
+            <span class="tag">{{INTEREST_1}}</span>
+            <span class="tag">{{INTEREST_2}}</span>
+            <span class="tag">{{INTEREST_3}}</span>
+          </div>
+
+          <h2>Publications</h2>
+          <div class="pub-section">
+
+            <p class="pub-group-title">Peer-Reviewed Journal Articles</p>
+            <div class="pub-item"><p class="pub-ref">{{AUTHORS}} ({{YEAR}}). {{TITLE}}. <em>{{JOURNAL}}</em>, {{VOLUME_PAGES}}. <a href="{{DOI_URL}}" class="pub-doi-inline" target="_blank" rel="noopener">{{DOI_URL}}</a></p></div>
+
+            <p class="pub-group-title">Conference Proceedings</p>
+            <div class="pub-item"><p class="pub-ref">{{AUTHORS}} ({{YEAR}}). {{TITLE}}. Paper presented at <em>{{CONFERENCE}}</em>, {{LOCATION}}.</p></div>
+
+            <p class="pub-group-title">Book Chapters</p>
+            <div class="pub-item"><p class="pub-ref">{{AUTHORS}} ({{YEAR}}). {{TITLE}}. In <em>{{BOOK_TITLE}}</em>, Chapter {{CHAPTER}}.</p></div>
+
+            <p class="pub-group-title">Ongoing Research</p>
+            <div class="pub-item"><p class="pub-ref">{{ONGOING_RESEARCH_TITLE}}</p></div>
+
+          </div>
+
+          <h2>Education</h2>
+          <div class="edu-list">
+            <div class="edu-item">
+              <p class="edu-degree">{{DEGREE}}</p>
+              <p class="edu-inst">{{UNIVERSITY}}</p>
+              <p class="edu-loc">{{CITY_COUNTRY}}</p>
+              <span class="edu-year">{{YEAR_RANGE}}</span>
+            </div>
+            <!-- Duplicate the .edu-item block above for each degree. -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><span class="logo-mark">GeoScape</span><span class="logo-sub" style="color: var(--muted);">Lab</span></div>
+        <p>An independent research group studying disaster risk, water &amp; land dynamics, environmental economics, and climate adaptation.</p>
+      </div>
+      <div class="footer-links">
+        <a href="../about.html">About</a><a href="../people.html">People</a><a href="../research.html">Research</a>
+        <a href="../projects.html">Projects</a><a href="../prospective.html">Join Us</a><a href="../news.html">News</a><a href="../contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2023 GeoScape Lab. All rights reserved.</span>
+      <span>geoscape-lab.github.io</span>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

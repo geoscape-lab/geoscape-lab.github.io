@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research · GeoScape Lab</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="topbar">Independent Research Group &nbsp;·&nbsp; GIS &nbsp;·&nbsp; Remote Sensing &nbsp;·&nbsp; GeoAI &nbsp;·&nbsp; Climate &amp; Water Dynamics</div>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">GeoScape</span><span class="logo-sub">Lab</span></a>
+      <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="people.html">People</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="news.html">News</a>
+        <a href="prospective.html">Join Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Research</p>
+      <h1>Published Research</h1>
+      <p>Peer-reviewed articles and academic publications by GeoScape Lab members.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-inner">
+
+      <div class="section-header">
+        <span class="section-label">Articles</span>
+        <h2 class="section-title">Publications</h2>
+      </div>
+
+      <!-- ╔═══════════════════════════════════════════════════════════════════╗
+           ║              HOW TO ADD A RESEARCH PUBLICATION                     ║
+           ╠═══════════════════════════════════════════════════════════════════╣
+           ║ STEP 1: Copy the block between TEMPLATE_START and TEMPLATE_END.   ║
+           ║ STEP 2: Paste it inside <div class="research-list"> below.        ║
+           ║         Keep newest at the top (or sort however you like).        ║
+           ║ STEP 3: Update the {{NUM}} number for ALL articles so they go     ║
+           ║         01, 02, 03... in the order they appear.                    ║
+           ║ STEP 4: Replace every other {{...}} placeholder.                  ║
+           ║ STEP 5: Commit changes. Done!                                     ║
+           ╠═══════════════════════════════════════════════════════════════════╣
+           ║ PLACEHOLDER GUIDE:                                                 ║
+           ║   {{NUM}}      = sequential number, e.g. 01, 02, 03 (zero-padded) ║
+           ║   {{YEAR}}     = e.g. 2025                                        ║
+           ║   {{JOURNAL}}  = journal name, e.g. Applied Water Science          ║
+           ║   {{TITLE}}    = full article title                               ║
+           ║   {{AUTHORS}}  = full author list, e.g. Shuvo, R. M., et al.      ║
+           ║   {{DOI_URL}}  = full DOI URL, e.g. https://doi.org/10.1007/...   ║
+           ║                                                                    ║
+           ║ NOT YET ONLINE? Replace href="{{DOI_URL}}" with href="#"           ║
+           ║   and add style="pointer-events:none; opacity:0.4;" to the link.  ║
+           ╚═══════════════════════════════════════════════════════════════════╝
+
+      TEMPLATE_START
+      <div class="article-item">
+        <span class="article-num">{{NUM}}</span>
+        <div>
+          <div class="article-meta">
+            <span class="article-year">{{YEAR}}</span>
+            <span class="article-journal">·&nbsp; {{JOURNAL}}</span>
+          </div>
+          <p class="article-title">{{TITLE}}</p>
+          <p class="article-authors">{{AUTHORS}}</p>
+        </div>
+        <a href="{{DOI_URL}}" class="article-link" target="_blank" rel="noopener">DOI &rarr;</a>
+      </div>
+      TEMPLATE_END
+      -->
+
+      <div class="research-list">
+
+        <div class="article-item">
+          <span class="article-num">01</span>
+          <div>
+            <div class="article-meta">
+              <span class="article-year">2025</span>
+              <span class="article-journal">·&nbsp; Applied Water Science</span>
+            </div>
+            <p class="article-title">Groundwater sustainability assessment and desertification susceptibility mapping in semi-arid Bangladesh using integrated remote sensing and logistic regression modeling</p>
+            <p class="article-authors">Shuvo, R. M., Chowdhury, R. R., Chakroborty, S., Das, A., Kafy, A. A., Altuwaijri, H. A., &amp; Bahiru, T. K.</p>
+          </div>
+          <a href="https://doi.org/10.1007/s13201-025-02584-1" class="article-link" target="_blank" rel="noopener">DOI &rarr;</a>
+        </div>
+
+        <div class="article-item">
+          <span class="article-num">02</span>
+          <div>
+            <div class="article-meta">
+              <span class="article-year">2025</span>
+              <span class="article-journal">·&nbsp; Advances in Space Research</span>
+            </div>
+            <p class="article-title">Analyzing the Disparity Between Carbon Concentration and Absorption, and its Urban Climate Implications in Dhaka: A Google Earth Engine Based Case Study</p>
+            <p class="article-authors">Hasan, Md. Z., Kashem, S., Shuvo, R. M., Ghosh, P. K., &amp; Romit, W. I.</p>
+          </div>
+          <a href="https://doi.org/10.1016/j.asr.2025.07.037" class="article-link" target="_blank" rel="noopener">DOI &rarr;</a>
+        </div>
+
+        <div class="article-item">
+          <span class="article-num">03</span>
+          <div>
+            <div class="article-meta">
+              <span class="article-year">2025</span>
+              <span class="article-journal">·&nbsp; Environmental Economics and Policy for a Changing World, Ch. 5</span>
+            </div>
+            <p class="article-title">The Economics of Non-Renewable Natural Resource Depletion Externalities: Lessons from Groundwater Overdraft in North-Western Bangladesh</p>
+            <p class="article-authors">Das, A., Shuvo, R. M., &amp; Kashem, R.</p>
+          </div>
+          <a href="https://doi.org/10.21203/rs.3.rs-7457789/v1" class="article-link" target="_blank" rel="noopener">DOI &rarr;</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><span class="logo-mark">GeoScape</span><span class="logo-sub" style="color: var(--muted);">Lab</span></div>
+        <p>An independent research group studying disaster risk, water &amp; land dynamics, environmental economics, and climate adaptation.</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a><a href="people.html">People</a><a href="research.html">Research</a>
+        <a href="projects.html">Projects</a><a href="prospective.html">Join Us</a><a href="news.html">News</a><a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2023 GeoScape Lab. All rights reserved.</span>
+      <span>geoscape-lab.github.io</span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+╔══════════════════════════════════════════════════════════════════════════╗
+║              HOW TO USE THIS TEMPLATE FOR A NEWS DETAIL PAGE              ║
+╠══════════════════════════════════════════════════════════════════════════╣
+║ STEP 1: Make a COPY of this file. Name it news-{{SLUG}}.html              ║
+║         (e.g. news-conference-2026.html). Use lowercase, hyphens only.    ║
+║                                                                            ║
+║ STEP 2: Replace every {{...}} placeholder.                                ║
+║                                                                            ║
+║ STEP 3 (optional): Upload a hero image to /images named                   ║
+║         "news-{{SLUG}}.jpg". If no image, the placeholder hides           ║
+║         automatically.                                                    ║
+║                                                                            ║
+║ STEP 4: Open /news.html and add the news card linking to this page        ║
+║         (see template at the top of news.html).                           ║
+║                                                                            ║
+║ STEP 5: Commit. Done!                                                     ║
+╠══════════════════════════════════════════════════════════════════════════╣
+║ PLACEHOLDER GUIDE:                                                        ║
+║   {{TITLE}}     = headline                                                ║
+║   {{SLUG}}      = url-safe short name (e.g. lab-funded-2026)              ║
+║   {{DATE}}      = e.g. 25 April 2023                                      ║
+║   {{CATEGORY}}  = e.g. Announcement / Publication / Event / Award         ║
+║   {{BODY}}      = full article in <p>...</p> paragraphs                   ║
+║                                                                            ║
+║ DELETE this entire instructions comment block before publishing.         ║
+╚══════════════════════════════════════════════════════════════════════════╝
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{TITLE}} · News · GeoScape Lab</title>
+  <meta name="description" content="{{TITLE}}" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <div class="topbar">Independent Research Group &nbsp;·&nbsp; GIS &nbsp;·&nbsp; Remote Sensing &nbsp;·&nbsp; GeoAI &nbsp;·&nbsp; Climate &amp; Water Dynamics</div>
+
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><span class="logo-mark">GeoScape</span><span class="logo-sub">Lab</span></a>
+      <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+      <nav id="mainNav">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../people.html">People</a>
+        <a href="../research.html">Research</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../news.html" class="active">News</a>
+        <a href="../prospective.html">Join Us</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="../index.html">Home</a> &nbsp;/&nbsp; <a href="../news.html">News</a> &nbsp;/&nbsp; {{TITLE}}</p>
+      <h1>{{TITLE}}</h1>
+      <p>{{DATE}}</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-inner">
+      <div class="member-layout">
+
+        <div class="member-sidebar" style="position: sticky; top: 100px;">
+          <p class="news-detail-meta">Published</p>
+          <p style="font-family: var(--serif); font-size: 18px; font-weight: 500; margin-bottom: 24px;">{{DATE}}</p>
+          <p class="news-detail-meta" style="margin-bottom: 8px;">Category</p>
+          <p style="font-size: 13px; font-weight: 300; color: var(--mid); margin-bottom: 24px;">{{CATEGORY}}</p>
+          <a href="../news.html" class="member-link-btn" style="margin-top: 8px;">&larr; Back to News</a>
+        </div>
+
+        <div class="member-content">
+
+          <img
+            src="../images/news-{{SLUG}}.jpg"
+            alt="{{TITLE}}"
+            class="news-detail-hero-img"
+            onerror="this.style.display='none'"
+          >
+
+          <div class="news-detail-body">
+            <p>{{BODY_PARAGRAPH_1}}</p>
+            <p>{{BODY_PARAGRAPH_2}}</p>
+            <!-- Add more <p>...</p> paragraphs as needed. -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><span class="logo-mark">GeoScape</span><span class="logo-sub" style="color: var(--muted);">Lab</span></div>
+        <p>An independent research group studying disaster risk, water &amp; land dynamics, environmental economics, and climate adaptation.</p>
+      </div>
+      <div class="footer-links">
+        <a href="../about.html">About</a><a href="../people.html">People</a><a href="../research.html">Research</a>
+        <a href="../projects.html">Projects</a><a href="../news.html">News</a><a href="../prospective.html">Join Us</a><a href="../contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2023 GeoScape Lab. All rights reserved.</span>
+      <span>geoscape-lab.github.io</span>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
